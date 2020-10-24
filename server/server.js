@@ -9,9 +9,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-app.use(require('./routes/usuarios'));
+//configuracion blogal de rutas
+app.use(require('./routes/index'));
 
-
+//conexion con
 mongoose.connect(process.env.URLDB, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
