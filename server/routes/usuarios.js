@@ -4,7 +4,6 @@ const { verificaToken, verificarRol  } = require('../middlewares/autenticacion')
 const bcrypt = require('bcrypt');
 const _ = require('underscore');
 
-
 const app = express();
 
 //lista de usuarios
